@@ -130,11 +130,13 @@ h1, h2, h3, h4, h5, h6 {
     transition: opasity .1s;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link.active  {
     color: #fce38a;
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active:after {
     opacity: 1;
 }
 
