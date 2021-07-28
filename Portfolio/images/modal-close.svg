@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="52" viewBox="0 0 30 52">
-  <g id="button" transform="translate(-1277 -128)">
-    <text id="close" transform="translate(1290 170)" fill="#2b2a2c" font-size="39" font-family="SegoeUI, Segoe UI" letter-spacing="0.05em"><tspan x="-12.587" y="0">✖️</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="39" viewBox="0 0 34 39">
+  <g id="button" transform="translate(-1273 -137)">
+    <text id="close" transform="translate(1290 170)" fill="#2b2a2c" font-size="39" font-family="FontAwesome" letter-spacing="0.05em"><tspan x="-16.714" y="0"></tspan></text>
   </g>
 </svg>
