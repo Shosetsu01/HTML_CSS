@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
@@ -32,7 +33,7 @@
                 <a class="nav__link" href="#">about me</a>
                 <a class="nav__link" href="#">blog</a>
                 <a class="nav__link" href="#">contact</a>
-                <a class="nav__link nav__link--btn" href="#">hire me</a>
+                <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
             </nav>
 
         </div>
@@ -73,8 +74,8 @@
                     </a>
                 </div>
 
-                <a class="btn" href="#">HIRE ME</a>
-                <button class="btn" type="button">SEE MY RESUME</button>
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
             </div>
 
             <img class="intro__photo" src="images/photo.png" alt="">
@@ -90,18 +91,18 @@
     <div class="container">
 
         <div class="works__nav">
-            <a href="" class="works__nav-link">All</a>
-            <a href="" class="works__nav-link">App</a>
-            <a href="" class="works__nav-link">Websites</a>
-            <a href="" class="works__nav-link">Interection</a>
+            <a href="#" class="works__nav-link" data-filter="all">All</a>
+            <a href="#" class="works__nav-link" data-filter="app">App</a>
+            <a href="#" class="works__nav-link" data-filter="website">Websites</a>
+            <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
         </div>
 
         <div class="portfolio">
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: website</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -110,11 +111,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: website</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -123,11 +124,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: interaction</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -136,11 +137,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: website</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -149,11 +150,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: interaction</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -162,11 +163,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: app</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -175,11 +176,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: interaction</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -188,11 +189,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: website</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -201,11 +202,11 @@
                 </div>
             </div>
 
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#modal_project_1">
                     <img class="work__image" src="https://place-hold.it/370x300" alt="dhhd">
                     <div class="work__content">
-                        <div class="work__cat">category</div>
+                        <div class="work__cat">category: app</div>
                         <div class="work__title">
                             Project title
                             <time class="work__date" datetime="2021-06-28 11:15">2021</time>
@@ -243,8 +244,8 @@
                     <p>Donec at mauris porta, ullamcorper sem quis, lobortisgestas, dignissim elit at, imperdiet eros. Integer tristique posuere purus.</p>
                     <p>Suspendisse placerat, quam vitae ullamcorper sollicitudin, dui ligula molestie massa, sit amet laoreet nibh ex vitae dui. Aenean laoree.</p>
                 </div>
-                <a class="btn" href="#">HIRE ME</a>
-                <button class="btn" type="button">SEE MY RESUME</button>
+                <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
             </div><!-- /.about__content -->
         </div><!-- /.about__inner -->
 
@@ -410,7 +411,7 @@
                 <a href="#" class="footer__nav-link">About me</a>
                 <a href="#" class="footer__nav-link">Blog</a>
                 <a href="#" class="footer__nav-link">Contact</a>
-                <a href="#" class="footer__nav-link footer__nav-link--btn">Here me</a>
+                <a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">Here me</a>
             </nav>
         </div><!-- /.footer__inner -->
 
@@ -420,16 +421,23 @@
 
 
 <!-- Modals #1 -->
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_project_1">
     <div class="modal__dialog">
 
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <img src="images/modal-close.svg" alt="Close">
         </button>
 
         <div class="modal-work">
             <div class="modal-work__preview">
-                <img class="modal-work__photo" src="https://place-hold.it/790x780" alt="">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://place-hold.it/790x780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://place-hold.it/790x780/333" alt="">
+                    </div>
+                </div>
             </div>
             <div class="modal-work__content">
 
@@ -451,11 +459,11 @@
                 </div>
 
                 <div class="modal-work__footer">
-                    <button class="modal-work__btn" type="button">
+                    <button class="modal-work__btn slickPrev" type="button">
                         <img src="images/prev.svg" height="12" alt="">
                         Previous
                     </button>
-                    <button class="modal-work__btn" type="button">
+                    <button class="modal-work__btn slickNext" type="button">
                         Next
                         <img src="images/next.svg" height="12" alt="">
                     </button>
@@ -470,10 +478,10 @@
 
 
 <!-- Modals #2 -->
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_resume">
     <div class="modal__dialog">
 
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <img src="images/modal-close.svg" alt="Close">
         </button>
 
@@ -630,10 +638,10 @@
 
 
 <!-- Modals #3 -->
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_hire_me">
     <div class="modal__dialog  modal__dialog--sm">
 
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <img src="images/modal-close.svg" alt="Close">
         </button>
 
@@ -676,6 +684,9 @@
 
 
 
+<!-- JS / JQuery -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
 
 
 
