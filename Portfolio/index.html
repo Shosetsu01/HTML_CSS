@@ -30,7 +30,7 @@
                 </div>
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a class="nav__link" href="#" data-scroll="#works">work</a>
                 <a class="nav__link" href="#" data-scroll="#about">about me</a>
                 <a class="nav__link" href="#" data-scroll="#blog">blog</a>
@@ -38,9 +38,9 @@
                 <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
             </nav>
 
-            <div class="burger">
+            <button class="burger" type="button" id="navToggle">
                 <img class="burger__icon" src="images/burger.svg" alt="">
-            </div>
+            </button>
 
         </div>
     </div>
@@ -53,7 +53,7 @@
     <div class="container">
 
         <div class="intro__inner">
-            <div class="into__content">
+            <div class="intro__content">
                 <h2 class="intro__subtitle">Hello, i'm</h2>
                 <h1 class="intro__title">Lewis Nathaniel</h1>
                 <div class="intro__text">UI &amp; UX Designer</div>
@@ -426,7 +426,7 @@
 
 
 
-<!-- Modals #1 -->
+<!-- Modals #1 PROJECT -->
 <div class="modal" id="modal_project_1">
     <div class="modal__dialog">
 
@@ -483,7 +483,7 @@
 
 
 
-<!-- Modals #2 -->
+<!-- Modals #2 SEE MY RESUME -->
 <div class="modal" id="modal_resume">
     <div class="modal__dialog">
 
@@ -643,7 +643,7 @@
 
 
 
-<!-- Modals #3 -->
+<!-- Modals #3 HIRE ME -->
 <div class="modal" id="modal_hire_me">
     <div class="modal__dialog  modal__dialog--sm">
 
@@ -683,6 +683,10 @@
                     </div>
                 </form>
             </div><!-- /.contact__left -->
+
+            <div class="contact__right">
+                <img class="contact__right-img" src="https://place-hold.it/477x700" alt="">
+            </div>
         </div><!-- /.contact -->
 
     </div><!-- /.modal__dialog -->

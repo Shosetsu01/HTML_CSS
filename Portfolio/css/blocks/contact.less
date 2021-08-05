@@ -3,7 +3,7 @@
 .contact {
     display: flex;
 
-    background: url(https://place-hold.it/477x700) right center no-repeat;
+    // background: url(https://place-hold.it/477x700) right center no-repeat;
 }
 
 .contact__left {
@@ -13,12 +13,17 @@
 
 .contact__info {
     margin: 2rem 0 3rem;
+    margin-right: .75rem;
     padding: 0;
     list-style: none;
 
     font-size: .94rem;
     color: @black;
     font-weight: 300;
+
+    @media @tablet {
+        margin: 1.5rem 0 1.5rem;
+    }
 }
 
 .contact__info-item {
@@ -31,6 +36,11 @@
     }
 }
 
-.contact__info {
-    margin-right: .75rem;
+.contact__right {
+    width: 53%;
+}
+
+.contact__right-img {
+    display: block;
+    max-width: 100%;
 }

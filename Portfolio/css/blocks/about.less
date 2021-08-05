@@ -55,6 +55,7 @@
 
         img {
             position: relative;
+            margin: 0 auto;
         }
     }
 
@@ -67,8 +68,14 @@
 
     @media @tablet {
         order: 1;
-
         margin-bottom: 2.5rem;
+        padding-left: 0;
+
+        text-align: center;
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -80,6 +87,10 @@
 
     @media @notebook {
         font-size: 2.5rem;
+    }
+
+    @media @mobile {
+        font-size: 2rem;
     }
 }
 
@@ -96,6 +107,14 @@
 
     @media @notebook {
         font-size: 4rem;
+    }
+
+    @media @tablet {
+        position: static;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
     }
 }
 
