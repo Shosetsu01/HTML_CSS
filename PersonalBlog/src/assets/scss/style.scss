@@ -10,6 +10,7 @@ body {
 
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1.4rem;
+    line-height: 1.5;
     color: $white;
 }
 
@@ -25,3 +26,6 @@ body {
 @import "blocks/sidebar";
 @import "blocks/main";
 @import "blocks/container";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";

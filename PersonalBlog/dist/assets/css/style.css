@@ -371,7 +371,17 @@ body {
     color: #fff;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Blocks */
+.page {
+    overflow: hidden;
+}
+
 .header {
     width: calc(100% - 300px);
     height: 30px;
@@ -395,4 +405,11 @@ body {
 .main {
     padding-top: 10rem;
     padding-left: 300px;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
