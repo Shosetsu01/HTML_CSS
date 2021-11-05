@@ -18,7 +18,51 @@
 
     <div class="pade">
         <!-- Header -->
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link  has-subnav" href="#">Статьи</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                                    <a class="subnav__link" href="#">Продвижение сайтов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <form class="search" action="/" method="post">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
 
         <!-- Sidebar -->
         <aside class="sidebar">
